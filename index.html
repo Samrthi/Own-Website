@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Page</title>
+   <link rel="stylesheet" href="style.css">
+   <script type="text/javascript">
+     function selectNav(navName,elmnt, colour) {
+       var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(navName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+
+     }
+     document.getElementById("defaultOpen").click();
+   </script>
+</head>
+<body>
+  <header>
+    <!-- Header Information Goes in here -->
+    <h1>Sam Thiesen</h1>
+    <h2>Digital Media Student</h2>
+    <nav>
+      <!-- Navigation Goes in here -->
+      <div id="Home" class="tabcontent">
+        <p>Home</p>
+      </div>
+      <p>CV</p>
+      <p>Projects</p>
+      <p>Contact</p>
+      <button class="tablink" onclick="selectNav('Home',this,'blue')"></button>
+    </nav>
+  </header>
+  <main>
+    <!-- Main Information Goes in here -->
+    <section>
+      <!-- Section Information Goes in here -->
+      <article class="info">
+        <h3>hi there!</h3>
+        <p>I am a digital media student at Robert Gordon University Aberdeen, currently in first year.<br>
+        I enjoy working on graphic projects and am learning about HTML, CSS and Javascript.<br>
+        In my free time I enjoy photography, embroidery and Star Trek.
+      </p>
+      </article>
+      <article class="contact me">
+        <p>Get in touch!</p>
+          <form class="contact_form" action="#" method="POST">
+            <input type="text" name="Name" placeholder="Name" value="">
+            <br>
+            <input type="text" name="Email" placeholder="Email" value="">
+            <br>
+            <textarea name="subject" rows="10" cols="80" placeholder="Fire away!"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <!-- Footer Information Goes in here -->
+    <p><a href="http//:instagram.com">Instagram</a></p>
+  </footer>
+</body>
+</html>
