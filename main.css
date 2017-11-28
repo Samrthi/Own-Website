@@ -1,0 +1,119 @@
+
+@font-face {
+  font-family: "Amatic";
+  src: url("../fonts/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+  font-family: "railway";
+  src: url("../fonts/raleway_thin-webfont.ttf");
+}
+/*readability of railway turned out to be really low so I'm not using it anymore but I'll leave it in for future reference*/
+/*I used Amatic for my name on my home page but on some screen sizes it kinda ... bugged? and weird spikes started coming from the letters*/
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom right, lavender, lightsteelblue);
+  font-family: Verdana, sans-serif;
+}
+
+#header {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+@media (orientation:portrait) {
+  .bounce {
+    margin: -500px 0 0 0;
+  }
+}
+
+#nav ul {
+  list-style-type: none;
+  list-style: none;
+
+  margin: 0 0 0 -25px;
+  /* no better solution could be found*/
+}
+
+#nav li {
+  float: left;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+#nav li a {
+  color: black;
+}
+
+#nav li:hover {
+  background-color: lightsteelblue;
+  color: black;
+}
+
+/* SET COLOUR OF CURRENT NAV*/
+
+.active {
+  background-color: lightsteelblue;
+  color: white;
+}
+
+#logopic {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+#links ul {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+}
+
+#links li {
+  display: inline;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#links li a {
+  color: black;
+}
+
+#links {
+    text-align: right;
+}
+
+
+#profile-pic {
+  border-radius: 50%;
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#about h6 {
+  font-size: 1.5em;
+  margin: 20px 0 0 0;
+}
+
+
+footer {
+  background-color: lightsteelblue;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}

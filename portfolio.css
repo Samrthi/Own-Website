@@ -1,0 +1,46 @@
+#portfolio {
+  margin-top: 100px;
+}
+
+
+
+#portfolio a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+#project1pic, #project2pic {
+  width: 100%;
+  margin-top: 20px;
+
+  /*???????????????*/
+  padding: auto;
+  /*???????????????*/
+}
+
+#isoconstruction {
+  padding-top: 5em;
+  width: 100%;
+}
+
+
+#gallery h1 {
+  text-align: center;
+}
+
+#gallery ul li {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#gallery ul li a:hover {
+  opacity: 0.8;
+}
+
+.gallery-image {
+  width: 100%;
+}
