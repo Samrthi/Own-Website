@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/portfolio.css">
+  <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+  <meta name="viewport" content="
+       width=device-width,
+       initial-scale=1,
+       minimum-scale=1,
+       maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
+</head>
+
+<body>
+  <div id="header" class="grid-container">
+    <!-- Header Information Goes in here -->
+
+    <div id="nav" class="grid-25 tablet-grid-25 mobile-grid-70">
+      <!-- Navigation Goes in here -->
+      <ul>
+        <li><a href="index.html" accesskey="h"><i class="fa fa-home" aria-hidden="true" aria-label="Home" title="home"></i></a></li>
+        <li><a href="cv.html" accesskey="a"><i class="fa fa-user" aria-hidden="true" aria-label="About me" title="About me"></i></a></li>
+        <li class="active"><a href="portfolio.html" accesskey="p"><i class="fa fa-code" aria-hidden="true" aria-label="Portfolio" title="Portfolio"></i></a></li>
+        <li><a href="contact.html" accesskey="c"><i class="fa fa-envelope" aria-hidden="true" aria-label="Contact" title="Contact"></i></a></li>
+        <!-- "aria-label" doesn't appear on firefow screenreader extension (claws?) -->
+      </ul>
+    </div>
+    <!--nav-->
+
+    <div id="logo" class="grid-50 tablet-grid-50 hide-on-mobile">
+      <!--Logo goes in here-->
+      <img id="logopic" src="pictures/logo.png" alt="logo with initials S.T.">
+    </div>
+    <!--logo-->
+
+    <div id="links" class="grid-25 tablet-grid-25 mobile-grid-30">
+      <!-- Links to social media go in here -->
+      <ul>
+        <li><a href=https://www.linkedin.com/in/sandra-thiesen-b58854151/><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href=https://github.com/Samrthi><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <!--links-->
+
+  </div>
+  <!--Header-->
+  <main>
+    <article id="portfolio" class="grid-container">
+      <article id="project1" class="grid-50 tablet-grid-50 mobile-grid-100">
+        <a href="isometric.html">
+        <img id="project1pic" src="pictures/isometric.png" alt="An isometric illustration of a level of a historic fantasy game">
+        <caption>Isometric platformer illustration using Adobe Illustrator</caption>
+        </a>
+      </article>
+      <article id="project2" class="grid-50 tablet-grid-50 mobile-grid-100">
+        <a href="iceland.html">
+        <img id="project2pic" src="pictures/iceland1.png" alt="A glacier covered in snow">
+        <caption>Photographs taken on a trip to Iceland</caption>
+        </a>
+      </article>
+    </article>
+  </main>
+  <footer>
+    <h1>Access keys</h1>
+    <p><strong>H</strong>ome
+       <strong>A</strong>bout me
+       <strong>P</strong>ortfolio
+       <strong>C</strong>ontacts
+    </p>
+  </footer>
+</body>
+
+</html>

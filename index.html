@@ -1,77 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="
+      width=device-width,
+      initial-scale=1,
+      minimum-scale=1,
+      maximum-scale=1
+    " />
   <title>Contact Page</title>
-   <link rel="stylesheet" href="style.css">
-   <script type="text/javascript">
-     function selectNav(navName,elmnt, colour) {
-       var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-
-    // Show the specific tab content
-    document.getElementById(navName).style.display = "block";
-
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
-
-     }
-     document.getElementById("defaultOpen").click();
-   </script>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/home.css">
+  <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+  <!--
+        WHAT IS THE PATH AND WHY DOES IT WORK WITHOUT IT???
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ -->
+  <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
 </head>
+
 <body>
-  <header>
+  <div id="header" class="grid-container">
     <!-- Header Information Goes in here -->
-    <h1>Sam Thiesen</h1>
-    <h2>Digital Media Student</h2>
-    <nav>
+
+    <div id="nav" class="grid-25 tablet-grid-25 mobile-grid-70">
       <!-- Navigation Goes in here -->
-      <div id="Home" class="tabcontent">
-        <p>Home</p>
-      </div>
-      <p>CV</p>
-      <p>Projects</p>
-      <p>Contact</p>
-      <button class="tablink" onclick="selectNav('Home',this,'blue')"></button>
-    </nav>
-  </header>
-  <main>
+      <ul>
+        <li class="active"><a href="index.html" accesskey="h"><i class="fa fa-home" aria-hidden="true" aria-label="Home" title="home"></i></a></li>
+        <li><a href="cv.html" accesskey="a"><i class="fa fa-user" aria-hidden="true" aria-label="About me" title="About me"></i></a></li>
+        <li><a href="portfolio.html" accesskey="p"><i class="fa fa-code" aria-hidden="true" aria-label="Portfolio" title="Portfolio"></i></a></li>
+        <li><a href="contact.html" accesskey="c"><i class="fa fa-envelope" aria-hidden="true" aria-label="Contact" title="Contact"></i></a></li>
+        <!-- "aria-label" doesn't appear on firefow screenreader extension (claws?) -->
+      </ul>
+    </div>
+    <!--nav-->
+
+    <div id="logo" class="grid-50 tablet-grid-50 hide-on-mobile">
+      <!--Logo goes in here-->
+      <img id="logopic" src="pictures/logo.png" alt="logo with initials S.T.">
+    </div>
+    <!--logo-->
+
+    <div id="links" class="grid-25 tablet-grid-25 mobile-grid-30">
+      <!-- Links to social media go in here -->
+      <ul>
+        <li><a href=https://www.linkedin.com/in/sandra-thiesen-b58854151/><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+        <li><a href=https://github.com/Samrthi><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <!--links-->
+
+  </div>
+  <!--Header-->
+
+  <div id="main" class="grid-container">
     <!-- Main Information Goes in here -->
-    <section>
-      <!-- Section Information Goes in here -->
-      <article class="info">
-        <h3>hi there!</h3>
-        <p>I am a digital media student at Robert Gordon University Aberdeen, currently in first year.<br>
-        I enjoy working on graphic projects and am learning about HTML, CSS and Javascript.<br>
-        In my free time I enjoy photography, embroidery and Star Trek.
-      </p>
-      </article>
-      <article class="contact me">
-        <p>Get in touch!</p>
-          <form class="contact_form" action="#" method="POST">
-            <input type="text" name="Name" placeholder="Name" value="">
-            <br>
-            <input type="text" name="Email" placeholder="Email" value="">
-            <br>
-            <textarea name="subject" rows="10" cols="80" placeholder="Fire away!"></textarea>
-            <br>
-            <input type="submit" value="Submit">
-          </form>
-      </article>
-    </section>
-  </main>
-  <footer>
+    <article id="info" class="grid-50 tablet-grid-50 mobile-grid-100">
+      <h1>Sandra Thiesen</h1>
+      <h3>DIGITAL MEDIA STUDENT</h3>
+      <p> Hi! I am a student on my way to becoming a software developer currently learning front end web development and graphic design.</p>
+      <span class="hide-on-desktop hide-on-mobile">TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET</span>
+      <span class="hide-on-tablet hide-on-mobile">DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP</span>
+      <span class="hide-on-desktop hide-on-tablet">MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE</span>
+    </article>
+    <article id="bounce" title="can this have an title?" class="grid-50 tablet-grid-50 mobile-grid-100">
+      <canvas id="mycanvas" width="500" height="500"></canvas>
+
+      <script>
+        window.addEventListener("load", myApp, false);
+
+        function myApp() {
+
+          //          got this part off stackoverflow
+          function getWidth() {
+            return Math.max(
+              document.body.scrollWidth,
+              document.documentElement.scrollWidth,
+              document.body.offsetWidth,
+              document.documentElement.offsetWidth,
+              document.documentElement.clientWidth
+            );
+          }
+          //
+
+          var canvas;
+          var t;
+          var context;
+          var circle
+          var circleR;
+          var circleX;
+          var circleY;
+          var circleC;
+          var counter;
+          var o;
+          var up;
+          var bounceCount;
+          var m, c;
+          var height;
+          var xMomentum;
+
+          function getCanvas() {
+            var tmp;
+
+            tmp = document.getElementById("mycanvas");
+
+            if (tmp == null) {
+              alert("no canvas");
+            }
+
+            return tmp;
+
+          }
+
+          function animateMe() {
+
+            if (getWidth() < 500) {
+              canvas.width = getWidth();
+            }
+
+
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            function f(height) {
+              m = canvas.height / (canvas.height - (canvas.height - height))
+              c = -m * (canvas.height - height)
+            }
+
+
+            height = canvas.height - (bounceCount * (30 - bounceCount / 2))
+
+            f(height)
+
+            if (bounceCount < 30) {
+              circleY -= up * ((circleY * m + c) / 10);
+            }
+
+
+            if (bounceCount >= 30) {
+              xMomentum = 0;
+            }
+
+            circleX += xMomentum;
+
+            if (circleY <= bounceCount * (30 - bounceCount / 2) + (11 * (height / canvas.height))) {
+              up = -1;
+            }
+
+            if (circleY >= canvas.height - 50 && up == -1) {
+              up = 1;
+              bounceCount++;
+              xMomentum = ((30 - bounceCount) / 30) * 0.5;
+            }
+
+            context.beginPath();
+            context.arc(circleX, circleY, circleR, 0, 2 * Math.PI);
+            context.fillStyle = circleC;
+            context.fill();
+
+            t += 1;
+
+            requestAnimationFrame(animateMe);
+          }
+
+          canvas = getCanvas();
+          context = canvas.getContext("2d");
+
+          init();
+
+          function init() {
+
+            circleR = 50;
+            circleX = 50;
+            circleY = canvas.height - 50;
+            circleC = "black";
+            counter = 0;
+            t = 0;
+            up = 1;
+            bounceCount = 0
+            xMomentum = 0.5
+
+
+            animateMe();
+          }
+
+        }
+      </script>
+
+    </article>
+  </div>
+  <!--main-->
+
+  <div class="footer">
     <!-- Footer Information Goes in here -->
-    <p><a href="http//:instagram.com">Instagram</a></p>
-  </footer>
+    <h1>Access keys</h1>
+    <p><strong>H</strong>ome
+       <strong>A</strong>bout me
+       <strong>P</strong>ortfolio
+       <strong>C</strong>ontacts
+    </p>
+    <!-- I really don't know what to put in the footer... maybe I'm missing something-->
+  </div>
+  <!--footer-->
 </body>
+
 </html>
+
+<!---->
+
+<!--IDEA SECTION
+
+Make it responsive by adding @media
+
+Use unsemantic
+
+If you were impressed by this demonstration of my Javascript skills, head over the portfolio section to see more of what I can do.
+You just saw my incredible Javascript skills. If you are impressed go to the portfolio to see even more awesome things I can do.
+
+Centre image in gallery
+
+access kezsys
+
+-->
+
+<!--QUESTIONS SECTION:
+
+Why is -everyting- the header about 50 pixels to the right??
+...unanswered
+
+
+How detailed does the alt text have to be?
+
+Why don't the margin appear on the #portfolio,
+why doesn't font size change?
+
+HOW DO I CENTRE OR RIGHT ALIGN THINGS??????????? (that arent text)
+
+margin / padding auto?
+Why does display: block make the auto margins work?
+
+what does position: absolute / relative do?
+
+How do I use h1-h6 and p???
+Since I don't really have articles...
+As image description p or h?
+Look at timeline!!!
+I guess it's to organise hierarchy and I have to style everything the way I want to anyways..?
+
+-->
+
+
+<!--GRID REFERENCE CODE
+
+.wrapper{
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr;
+  grid-auto-rows:minmax(100px, auto);
+  grid-gap:1em;
+  justify-items:stretch;
+  align-items:stretch;
+}
+
+.wrapper > div{
+  background:#eee;
+  padding:1em;
+}
+.wrapper > div:nth-child(odd){
+  background:#ddd;
+}
+
+.box1{
+  /*align-self:start;*/
+  grid-column:1/3;
+  grid-row:1/3;
+}
+
+.box2{
+  /*align-self:end;*/
+
+  grid-gap:1em;
+  /* grid-auto-rows:100px; */
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.nested{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-auto-rows: 70px;
+  grid-gap:1em;
+}
+
+-->

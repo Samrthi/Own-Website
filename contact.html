@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact me!</title>
+  <meta
+    name="viewport"
+    content="
+      width=device-width,
+      initial-scale=1,
+      minimum-scale=1,
+      maximum-scale=1
+    "
+  />
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/contact.css">
+  <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+  <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
+</head>
+
+<body>
+  <div id="header" class="grid-container">
+    <!-- Header Information Goes in here -->
+
+    <div id="nav" class="grid-25 tablet-grid-25 mobile-grid-70">
+      <!-- Navigation Goes in here -->
+      <ul>
+        <li><a href="index.html" accesskey="h"><i class="fa fa-home" aria-hidden="true" aria-label="Home" title="home"></i></a></li>
+        <li><a href="cv.html" accesskey="a"><i class="fa fa-user" aria-hidden="true" aria-label="About me" title="About me"></i></a></li>
+        <li><a href="portfolio.html" accesskey="p"><i class="fa fa-code" aria-hidden="true" aria-label="Portfolio" title="Portfolio"></i></a></li>
+        <li class="active"><a href="contact.html" accesskey="c"><i class="fa fa-envelope" aria-hidden="true" aria-label="Contact" title="Contact"></i></a></li>
+        <!-- "aria-label" doesn't appear on firefow screenreader extension (claws?) -->
+      </ul>
+    </div>
+    <!--nav-->
+
+    <div id="logo" class="grid-50 tablet-grid-50 hide-on-mobile">
+      <!--Logo goes in here-->
+      <img id="logopic" src="pictures/logo.png" alt="logo with initials S.T.">
+    </div>
+    <!--logo-->
+
+    <div id="links" class="grid-25 tablet-grid-25 mobile-grid-30">
+      <!-- Links to social media go in here -->
+      <ul>
+        <li><a href=https://www.linkedin.com/in/sandra-thiesen-b58854151/><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href=https://github.com/Samrthi><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <!--links-->
+
+  </div>
+  <!--Header-->
+  </body>
+  <main>
+    <article class="text">
+      <h3>Have I caught your interest?</h3>
+      <p>Get in touch! <br> Wether you want to collaborate on a project or just chat, I am interested to hear what you have to say!</p>
+    </article>
+    <article class="form">
+      <form class="" action="contact.html" method="post">
+        <input type="text" name="name" value="" placeholder="Your Name"> <br>
+        <input type="text" name="email" value="" placeholder="Your Email"> <br>
+        <textarea type="text" name="message" value="" placeholer="Your Message" cols="50" rows="10"></textarea>
+      </form>
+
+    </article>
+  </main>
+
+  <footer>
+    <h1>Access keys</h1>
+    <p><strong>H</strong>ome
+       <strong>A</strong>bout me
+       <strong>P</strong>ortfolio
+       <strong>C</strong>ontacts
+    </p>
+  </footer>
+</body>
+
+</html>
