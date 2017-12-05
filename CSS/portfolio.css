@@ -1,24 +1,29 @@
+
+/*
+.card {
+  width: 45%;
+}
+*/
+
 #portfolio {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
-
-
-#portfolio a {
+#portfolio a{
   text-decoration: none;
   color: black;
-  text-transform: uppercase;
+
+  /*???????????????*/
   text-align: center;
+  /*???????????????*/
 }
 
+#project1, #project2 {
+  margin-bottom: 20px;
+}
 
 #project1pic, #project2pic {
   width: 100%;
-  margin-top: 20px;
-
-  /*???????????????*/
-  padding: auto;
-  /*???????????????*/
 }
 
 #isoconstruction {
@@ -43,4 +48,10 @@
 
 .gallery-image {
   width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.gallery h1 {
+  text-align: center;
 }

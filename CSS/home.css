@@ -1,10 +1,16 @@
+
 #info {
-  margin-left: 10%;
-  margin-top: 10%;
+  padding-left: 10%;
+  padding-top: 10%;
 }
+
 
 #info h3 {
   font-size: 0.8em;
+}
+
+#info h2 {
+  font-size: 1em;
 }
 
 #info h1 {
@@ -18,8 +24,23 @@
   /*filed under: weird css that works*/
 }
 
+
 @media (max-width: 400px) {
   #info h1 {
     font-size: 2em;
   }
+  #info h2 {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 767px) {
+  #bounce {
+    margin: -300px 0 0 0;
+    float: right;
+  }
+}
+
+#bounce {
+  overflow: hidden;
 }
