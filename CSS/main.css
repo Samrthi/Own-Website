@@ -34,7 +34,7 @@ body {
 @media (min-width: 1200px) {
   body {
     width: 1200px;
-    margin: 0 auto !important;
+    margin: 0 auto;
   }
 }
 
