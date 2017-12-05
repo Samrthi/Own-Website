@@ -21,11 +21,6 @@ html {
   padding-left: 0;
 }
 
-@media (min-width: 1500px) {
-  html {
-    width: 1500px;
-  }
-}
 
 body {
   background: linear-gradient(to bottom right, lavender, lightsteelblue);
@@ -34,10 +29,20 @@ body {
   padding-left: 0;
 }
 
+
+/*I don't have enough content to fill a huge page so I limited the width of the body*/
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+    margin: 0 auto !important;
+  }
+}
+
 #header {
   margin: 0;
   padding: 0;
   max-width: 100%;
+  padding-top: 5px;
 }
 
 /*HEADER NAVIGATION*/
