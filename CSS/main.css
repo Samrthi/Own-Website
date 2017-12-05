@@ -21,6 +21,12 @@ html {
   padding-left: 0;
 }
 
+@media (min-width: 1500px) {
+  html {
+    width: 1500px;
+  }
+}
+
 body {
   background: linear-gradient(to bottom right, lavender, lightsteelblue);
   font-family: Verdana, sans-serif;
