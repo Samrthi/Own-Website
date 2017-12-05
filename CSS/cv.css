@@ -13,8 +13,8 @@ main {
   display: block;
 }
 
-#timeline {
-  border-left: solid 1px black;
+#about {
+  border-right: solid 1px black;
 }
 
 main ul {
