@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/contact.css">
   <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
-  <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
@@ -55,20 +55,17 @@
   <!--Header-->
   </body>
   <main>
-    <article class="text">
-      <h3>Have I caught your interest?</h3>
-      <p>Get in touch! <br> Wether you want to collaborate on a project or just chat, I am interested to hear what you have to say!</p>
-    </article>
-    <article class="form">
-      <form class="" action="contact.html" method="post">
-        <input type="text" name="name" value="" placeholder="Your Name"> <br>
-        <input type="text" name="email" value="" placeholder="Your Email"> <br>
-        <textarea type="text" name="message" value="" placeholer="Your Message" cols="50" rows="10"></textarea>
-      </form>
-
-    </article>
+    <h1>GET IN TOUCH!</h1>
+    <p>Wether you want to collaborate on a project or just chat, I am interested to hear what you have to say!</p>
+    <form id="contact">
+      <input id="name" type="text" placeholder="NAME">
+      <input id="email" type="text" placeholder="E-MAIL">
+      <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+      <input id="submit" type="submit" value="SEND!">
+    </form>
   </main>
-
+  <div id="invisible-footer">
+  </div>
   <footer>
     <h1>Access keys</h1>
     <p><strong>H</strong>ome
@@ -77,6 +74,12 @@
        <strong>C</strong>ontacts
     </p>
   </footer>
+  <script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
