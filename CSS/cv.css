@@ -17,6 +17,15 @@ main {
   border-right: solid 1px black;
 }
 
+@media (max-width: 767px)) {
+  #about {
+    border-right: none;
+  }
+  #timeline {
+    border-left: solid 1px black;
+  }
+}
+
 main ul {
   list-style: none;
   text-decoration: none;
