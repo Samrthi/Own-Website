@@ -21,6 +21,10 @@ input {
   border-style: solid;
   border-color: dimgray;
   border-width: 1px;
+
+  /*input fields suddenly have rounded corners on my mum's tablet, don't know if it works*/
+  border-radius: 0 !important;
+
   padding-left: 16px;
 }
 

@@ -17,13 +17,10 @@ main {
   border-right: solid 1px black;
 }
 
-@media (max-width: 767px)) {
+@media (max-width: 767px) {
   #about {
     border-right: none;
-  }
-  #timeline {
-    border-left: solid 1px black;
-  }
+}
 }
 
 main ul {
@@ -41,11 +38,6 @@ main ul {
   margin-top: 0;
 }
 
-/*
-#timeline p, #timeline h2 {
-  border-bottom: 1px solid darkgray;
-}
-*/
 
 #about h1, #timeline h1 {
   font-size: 16px;
@@ -69,5 +61,5 @@ main ul {
 }
 
 .gray-background {
-  background-color: rgba(81, 11, 11,0.8)!important;
+  background-color: rgba(81, 11, 11,0.8) !important;
 }
