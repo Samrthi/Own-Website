@@ -1,0 +1,146 @@
+
+/*
+
+@font-face {
+  font-family: "Amatic";
+  src: url("../fonts/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+  font-family: "railway";
+  src: url("../fonts/raleway_thin-webfont.ttf");
+}
+
+*/
+/*readability of railway turned out to be really low so I'm not using it anymore but I'll leave it in for future reference*/
+/*I used Amatic for my name on my home page but on some screen sizes it kinda ... bugged? and weird spikes started coming from the letters*/
+
+
+html {
+  height: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+body {
+  background: linear-gradient(to bottom right, lavender, lightsteelblue);
+  font-family: Verdana, sans-serif;
+/*
+  margin-left: 0;
+  padding-left: 0;
+*/
+}
+
+
+/*I don't have enough content to fill a huge page so I limited the width of the body*/
+@media (min-width: 1300px) {
+  body {
+    width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+/*HEADER*/
+
+#header {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  padding-top: 5px;
+}
+
+/*HEADER NAVIGATION*/
+
+#nav ul {
+  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
+  /*
+  margin: 0 0 0 -25px;
+  removing the left padding solved the problem yay
+  */
+}
+
+#nav li {
+  float: left;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+#nav li a {
+  color: black;
+}
+
+#nav li:hover {
+  border: 1px solid black;
+}
+
+/* SET COLOUR OF CURRENT NAV*/
+
+.active {
+  border: 1px solid black;
+}
+
+/*HEADER LOGO*/
+
+#logopic {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 5px;
+}
+
+/*HEADER LINKS*/
+
+#links ul {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+}
+
+#links li {
+  display: inline;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#links li a {
+  color: black;
+}
+
+#links {
+    text-align: right;
+}
+
+
+/*FOOTER*/
+
+#invisible-footer {
+  position: absolute;
+  width: 100%;
+  height: 3em;
+}
+/* ^ Seems to work*/
+
+
+footer {
+  background-color: lightsteelblue;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-left: 10px;
+}
+
+footer h1 {
+  font-size: 12px;
+  margin: 0;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
