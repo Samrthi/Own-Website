@@ -1,6 +1,5 @@
 
 /*
-
 @font-face {
   font-family: "Amatic";
   src: url("../fonts/AmaticSC-Regular.ttf");
@@ -10,8 +9,8 @@
   font-family: "railway";
   src: url("../fonts/raleway_thin-webfont.ttf");
 }
-
 */
+
 /*readability of railway turned out to be really low so I'm not using it anymore but I'll leave it in for future reference*/
 /*I used Amatic for my name on my home page but on some screen sizes it kinda ... bugged? and weird spikes started coming from the letters*/
 
@@ -26,19 +25,13 @@ html {
 body {
   background: linear-gradient(to bottom right, lavender, lightsteelblue);
   font-family: Verdana, sans-serif;
-/*
-  margin-left: 0;
-  padding-left: 0;
-*/
+  max-width: 1300px;
 }
 
+/*overwriting unsemantic*/
 
-/*I don't have enough content to fill a huge page so I limited the width of the body*/
-@media (min-width: 1300px) {
-  body {
-    width: 1300px;
-    margin: 0 auto;
-  }
+.grid-container {
+  max-width: 1300px !important;
 }
 
 /*HEADER*/
@@ -46,8 +39,8 @@ body {
 #header {
   margin: 0;
   padding: 0;
-  max-width: 100%;
   padding-top: 5px;
+  line-height: 1em;
 }
 
 /*HEADER NAVIGATION*/
@@ -67,6 +60,7 @@ body {
   padding: 8px;
   text-decoration: none;
   color: black;
+  font-size: 1.2em;
 }
 
 #nav li a {
@@ -99,13 +93,14 @@ body {
 #links ul {
   list-style-type: none;
   list-style: none;
-  margin: 0;
+  margin: 5px 0 0 0;
 }
 
 #links li {
   display: inline;
   padding: 8px;
   text-decoration: none;
+  font-size: 1.5em;
 }
 
 #links li a {

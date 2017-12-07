@@ -1,0 +1,18 @@
+body {
+    background-color: #FFFAFA;
+    font-family: "Verdana", sans-serif;
+}
+h1 {
+    ;
+}
+nav p{
+    display:inline;
+}
+
+.profile-pic {
+ border-radius: 50%
+}
+
+.about {
+  width: 50%
+}
