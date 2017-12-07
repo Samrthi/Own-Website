@@ -1,0 +1,3 @@
+1. On really old phones the background is gone and the contact form suddenly has round corners
+
+2. On screen with a width over 1300px the website isn't centred.
