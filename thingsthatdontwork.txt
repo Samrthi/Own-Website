@@ -1,1 +1,1 @@
-1. On really old phones the background is gone (added fallback colour, should work now) and the contact form suddenly has round corners (added !important rule, might work now)
+1. On really old phones the background is gone (added fallback colour, works now) and the contact form suddenly has round corners (added !important rule, worked on my mum's ancient phone)
