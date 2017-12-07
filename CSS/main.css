@@ -23,6 +23,7 @@ html {
 
 
 body {
+  background: lavender; /*FALLBACK*/
   background: linear-gradient(to bottom right, lavender, lightsteelblue);
   font-family: Verdana, sans-serif;
   max-width: 1300px;
