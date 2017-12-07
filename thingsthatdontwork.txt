@@ -1,3 +1,1 @@
 1. On really old phones the background is gone (added fallback colour, should work now) and the contact form suddenly has round corners (added !important rule, might work now)
-
-2. When going to the homepage in a phone-sized window none of the links work. The problem disappeared for 2 days and now reappeared.
