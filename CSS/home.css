@@ -1,16 +1,8 @@
+/*ABOUT ME TEXT*/
 
 #info {
   padding-left: 10%;
   padding-top: 10%;
-}
-
-
-#info h3 {
-  font-size: 0.8em;
-}
-
-#info h2 {
-  font-size: 1em;
 }
 
 #info h1 {
@@ -24,7 +16,15 @@
   /*filed under: weird css that works*/
 }
 
+#info h2 {
+  font-size: 1em;
+}
 
+#info h3 {
+  font-size: 0.8em;
+}
+
+/*Changing the font of the big text so it doesn't go beyond the right edge of the window at very small screen widths*/
 @media (max-width: 400px) {
   #info h1 {
     font-size: 2em;
@@ -34,7 +34,9 @@
   }
 }
 
+/*BOUNCING BALL ANIMATION*/
 
+/*moving the animation up so the ball jumps behind the text in the beginning at small screen widths so you can actually see the animation fully at first glance without scrolling*/
 @media (max-width: 767px) {
   #bounce {
     margin: -300px 0 0 0;
@@ -42,7 +44,7 @@
   }
 }
 
-
+/*Solved the problem where the fixed width of the canvas would mean you would have to scroll on smaller devices to see the entire width of the screen*/
 #bounce {
   overflow: hidden;
 }

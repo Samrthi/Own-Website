@@ -3,6 +3,22 @@ main {
   margin-top: 15px;
 }
 
+/*LEFT SIDE*/
+
+#left {
+  border-right: solid 1px black;
+}
+
+/*gets rid of border between left and right section in mobile layout since they are stacked in that layout*/
+@media (max-width: 767px) {
+  #left {
+    border-right: none;
+  }
+}
+
+
+/*PORTRAIT AND ABOUT TEXT*/
+
 #profile-pic {
   border-radius: 50%;
   width: 30%;
@@ -13,34 +29,10 @@ main {
   display: block;
 }
 
-#about {
-  border-right: solid 1px black;
-}
-
-@media (max-width: 767px) {
-  #about {
-    border-right: none;
-}
-}
-
-main ul {
-  list-style: none;
-  text-decoration: none;
-  padding-left: 0;
-}
+/*SKILL BARS*/
 
 #skills {
   margin-top: 20px;
-}
-
-#about h1, #timeline h1, #timeline h2, #timeline h3, ul, li, p {
-  font-size: 12px;
-  margin-top: 0;
-}
-
-
-#about h1, #timeline h1 {
-  font-size: 16px;
 }
 
 .progress {
@@ -48,11 +40,16 @@ main ul {
   background-color: transparent !important;
 }
 
-
 .progress-type {
   position: absolute;
   left: 5px;
 }
+
+.gray-background {
+  background-color: rgba(81, 11, 11,0.8) !important;
+}
+
+/*MAPS*/
 
 #maps {
   filter: grayscale(70%);
@@ -60,6 +57,14 @@ main ul {
   width: 100% !important;
 }
 
-.gray-background {
-  background-color: rgba(81, 11, 11,0.8) !important;
+/*FONT SIZES AND MARGINS*/
+
+#aboutpage h2, #aboutpage h3, ul, li, p {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+
+#aboutpage h1 {
+  font-size: 16px;
 }
