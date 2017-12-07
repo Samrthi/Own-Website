@@ -1,3 +1,4 @@
+/*MAIN*/
 
 main {
   margin: auto;
@@ -6,11 +7,15 @@ main {
   text-align: center;
 }
 
+/*CONTACT FORM*/
+
 #form {
   position: relative;
   width: 500px;
   margin-top: 50px;
 }
+
+/*INPUT FIELDS*/
 
 input {
   background: transparent;
@@ -21,16 +26,16 @@ input {
   border-style: solid;
   border-color: dimgray;
   border-width: 1px;
-
-  /*input fields suddenly have rounded corners on my mum's tablet, don't know if it works*/
+  /*input fields suddenly have rounded corners on my mum's ancient phone, don't know if this solution works*/
   border-radius: 0 !important;
-
   padding-left: 16px;
 }
 
 #name, #email {
- border-bottom: none;
+  border-bottom: none;
 }
+
+/*TEXT AREA*/
 
 textarea {
   background: transparent;
@@ -38,20 +43,27 @@ textarea {
   width: 470px;
   height: 120px;
   padding: 15px;
-
   border-style: solid;
   border-color: dimgray;
   border-width: 1px;
 }
 
+/*SUBMIT BUTTON*/
+
 #submit {
   width: 502px;
 }
 
+/*HOVER*/
+
 input:hover, textarea:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: black;
 }
+
+/*SIZING*/
+
+/*changing width of contact form so mobile phone users don't have to scroll*/
 
 @media (max-width: 500px) {
   main {
@@ -69,5 +81,4 @@ input:hover, textarea:hover {
   #submit {
     width: 300px;
   }
-
 }

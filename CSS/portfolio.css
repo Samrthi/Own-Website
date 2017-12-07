@@ -1,49 +1,50 @@
+/*PORTFOLIO.HTML*/
 
-/*
-.card {
-  width: 45%;
-}
-*/
+/*MAIN*/
 
 #portfolio {
   margin-top: 20px;
 }
 
-#portfolio a{
+#portfolio a {
   text-decoration: none;
   color: black;
-
-  /*???????????????*/
-  text-align: center;
-  /*???????????????*/
 }
+
+/*PROJECTS*/
 
 #project1, #project2 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #project1pic, #project2pic {
   width: 100%;
 }
 
+/*ISOMETRIC.HTML*/
+
+/*GIF*/
+
 #isoconstruction {
   padding-top: 5em;
   width: 100%;
 }
 
+/*ICELAND.HTML*/
+
+/*GALLERY HEADING*/
 
 #gallery h1 {
   text-align: center;
 }
 
+/*GALLERY IMAGES*/
+
 #gallery ul li {
   list-style: none;
   text-decoration: none;
   margin-top: 10px;
-}
-
-#gallery ul li a:hover {
-  opacity: 0.8;
 }
 
 .gallery-image {
@@ -52,6 +53,6 @@
   margin-bottom: auto;
 }
 
-.gallery h1 {
-  text-align: center;
+#gallery ul li a:hover {
+  opacity: 0.8;
 }
