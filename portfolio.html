@@ -2,98 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
   <title>Sandra Thiesen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="
+      width=device-width,
+      initial-scale=1,
+      minimum-scale=1,
+      maximum-scale=1
+    " />
+
+  <!--EXTERNAL CSS-->
+
+  <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--For reference: font awesome also worked without the cdn-->
+
+  <!--MY CSS-->
+
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/portfolio.css">
-  <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
-  <meta name="viewport" content="
-       width=device-width,
-       initial-scale=1,
-       minimum-scale=1,
-       maximum-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
 
-<body>
-  <div id="header" class="grid-container">
-    <!-- Header Information Goes in here -->
+  <body>
 
-    <div id="nav" class="grid-25 tablet-grid-25 mobile-grid-60">
-      <!-- Navigation Goes in here -->
-      <ul>
-        <li><a href="index.html" accesskey="h"><i class="fa fa-home" aria-hidden="true" aria-label="Home" title="home"></i></a></li>
-        <li><a href="cv.html" accesskey="a"><i class="fa fa-user" aria-hidden="true" aria-label="About me" title="About me"></i></a></li>
-        <li class="active"><a href="portfolio.html" accesskey="p"><i class="fa fa-code" aria-hidden="true" aria-label="Portfolio" title="Portfolio"></i></a></li>
-        <li><a href="contact.html" accesskey="c"><i class="fa fa-envelope" aria-hidden="true" aria-label="Contact" title="Contact"></i></a></li>
-        <!-- "aria-label" doesn't appear on firefow screenreader extension (claws?) -->
-      </ul>
-    </div>
-    <!--nav-->
+    <!--HEADER-->
 
-    <div id="logo" class="grid-50 tablet-grid-50 hide-on-mobile">
-      <!--Logo goes in here-->
-      <img id="logopic" src="pictures/logo.png" alt="logo with initials S.T.">
-    </div>
-    <!--logo-->
+    <div id="header" class="grid-container">
 
-    <div id="links" class="grid-25 tablet-grid-25 mobile-grid-40">
-      <!-- Links to social media go in here -->
-      <ul>
-        <li><a href=https://www.linkedin.com/in/sandra-thiesen-b58854151/><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </li>
-        <li><a href=https://github.com/Samrthi><i class="fa fa-github" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
-    <!--links-->
+      <!--NAVIGATION-->
 
-  </div>
-  <!--Header-->
-  <main>
-<!--
-    <div class="card">
-      <img id="project1pic" class="card-img-top" src="pictures/isometric.png" alt="An isometric illustration of a level of a historic fantasy game">
-      <div class="card-body">
-        <caption class="card-title">Isometric platformer illustration using Adobe Illustrator</caption>
-        <a href="isometric.html" accesskey="1" class="btn btn-primary">read</a>
+      <div id="nav" class="grid-25 tablet-grid-25 mobile-grid-60">
+        <ul>
+          <li><a href="index.html" accesskey="h"><i class="fa fa-home" aria-hidden="true" aria-label="Home" title="home"></i></a></li>
+          <li><a href="cv.html" accesskey="a"><i class="fa fa-user" aria-hidden="true" aria-label="About me" title="About me"></i></a></li>
+          <li class="active"><a href="portfolio.html" accesskey="p"><i class="fa fa-code" aria-hidden="true" aria-label="Portfolio" title="Portfolio"></i></a></li>
+          <li><a href="contact.html" accesskey="c"><i class="fa fa-envelope" aria-hidden="true" aria-label="Contact" title="Contact"></i></a></li>
+          <!-- For reference: "aria-label" doesn't appear on firefow screenreader extension -->
+        </ul>
       </div>
 
-      I like my own thing better than the bootstrap version but I'll leave it in to show that I tried
--->
+      <!--LOGO-->
+
+      <div id="logo" class="grid-50 tablet-grid-50 hide-on-mobile">
+        <!--Logo goes in here-->
+        <img id="logopic" src="pictures/logo.png" alt="logo with initials S.T.">
+      </div>
+
+      <!--SOCIAL MEDIA LINKS-->
+
+      <div id="links" class="grid-25 tablet-grid-25 mobile-grid-40">
+        <ul>
+          <li><a href=https://www.linkedin.com/in/sandra-thiesen-b58854151/><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          <li><a href=https://github.com/Samrthi><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
     </div>
-    <article id="portfolio" class="grid-container">
-      <article id="project1" class="grid-50 tablet-grid-50 mobile-grid-100">
-        <a href="isometric.html" accesskey="1">
+
+    <!--MAIN-->
+
+    <main>
+
+      <!--
+      I don't like the look of the plain bootstrap and since I do like how my code looks otherwise I won't put in the effort to find out how bootstrap themes work but I'll leave it in to show that I tried
+
+      <div class="card">
+        <img id="project1pic" class="card-img-top" src="pictures/isometric.png" alt="An isometric illustration of a level of a historic fantasy game">
+        <div class="card-body">
+          <caption class="card-title">Isometric platformer illustration using Adobe Illustrator</caption>
+          <a href="isometric.html" accesskey="1" class="btn btn-primary">read</a>
+        </div>
+      </div>
+      -->
+
+      <article id="portfolio" class="grid-container">
+
+        <!--PROJECT 1-->
+
+        <article id="project1" class="grid-50 tablet-grid-50 mobile-grid-100">
+          <a href="isometric.html" accesskey="1">
         <img id="project1pic" src="pictures/isometric.png" alt="An isometric illustration of a level of a historic fantasy game">
         <caption>Isometric platformer illustration using Adobe Illustrator</caption>
         </a>
-      </article>
-      <article id="project2" class="grid-50 tablet-grid-50 mobile-grid-100">
-        <a href="iceland.html" accesskey="2">
+        </article>
+
+        <!--PROJECT 2-->
+
+        <article id="project2" class="grid-50 tablet-grid-50 mobile-grid-100">
+          <a href="iceland.html" accesskey="2">
         <img id="project2pic" src="pictures/iceland1.png" alt="A glacier covered in snow">
         <caption>Photographs taken on a trip to Iceland</caption>
         </a>
+        </article>
       </article>
-    </article>
-  </main>
-  <div id="invisible-footer">
-  </div>
-  <footer>
-    <h1>Access keys</h1>
-    <p><strong>H</strong>ome
-      <strong>A</strong>bout me
-      <strong>P</strong>ortfolio
-      <strong>C</strong>ontacts
-      <br> Open first project: <strong>1</strong> Open second project: <strong>2</strong>
-    </p>
+    </main>
+
+    <!--FOOTER-->
+
+    <!--For reference: footer covers content on some pages but you can't scroll to see them since the footer is fixed so I added an invisible div the size of the footer at the bottom-->
+
+    <div id="invisible-footer">
+    </div>
+    <footer>
+      <h1>Access keys:</h1>
+      <p><strong>H</strong>ome
+        <strong>A</strong>bout me
+        <strong>P</strong>ortfolio
+        <strong>C</strong>ontacts
+      </p>
     </footer>
+
+    <!--JAVASCRIPT-->
+
     <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+  </body>
 
 </html>
+
+<!---->

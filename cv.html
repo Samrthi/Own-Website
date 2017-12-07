@@ -2,65 +2,84 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
   <title>Sandra Thiesen</title>
-  <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/main.css">
-  <link rel="stylesheet" href="CSS/cv.css">
+  <meta charset="UTF-8">
   <meta name="viewport" content="
       width=device-width,
       initial-scale=1,
       minimum-scale=1,
       maximum-scale=1
     " />
+
+  <!--EXTERNAL CSS-->
+
+  <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--For reference: font awesome also worked without the cdn-->
+
+  <!--MY CSS-->
+
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/cv.css">
+
 </head>
 
 <body>
+
+  <!--HEADER-->
+
   <div id="header" class="grid-container">
-    <!-- Header Information Goes in here -->
+
+    <!--NAVIGATION-->
 
     <div id="nav" class="grid-25 tablet-grid-25 mobile-grid-60">
-      <!-- Navigation Goes in here -->
       <ul>
         <li><a href="index.html" accesskey="h"><i class="fa fa-home" aria-hidden="true" aria-label="Home" title="home"></i></a></li>
         <li class="active"><a href="cv.html" accesskey="a"><i class="fa fa-user" aria-hidden="true" aria-label="About me" title="About me"></i></a></li>
         <li><a href="portfolio.html" accesskey="p"><i class="fa fa-code" aria-hidden="true" aria-label="Portfolio" title="Portfolio"></i></a></li>
         <li><a href="contact.html" accesskey="c"><i class="fa fa-envelope" aria-hidden="true" aria-label="Contact" title="Contact"></i></a></li>
-        <!-- "aria-label" doesn't appear on firefow screenreader extension (claws?) -->
+        <!-- For reference: "aria-label" doesn't appear on firefow screenreader extension -->
       </ul>
     </div>
-    <!--nav-->
+
+    <!--LOGO-->
 
     <div id="logo" class="grid-50 tablet-grid-50 hide-on-mobile">
       <!--Logo goes in here-->
       <img id="logopic" src="pictures/logo.png" alt="logo with initials S.T.">
     </div>
-    <!--logo-->
+
+    <!--SOCIAL MEDIA LINKS-->
 
     <div id="links" class="grid-25 tablet-grid-25 mobile-grid-40">
-      <!-- Links to social media go in here -->
       <ul>
         <li><a href=https://www.linkedin.com/in/sandra-thiesen-b58854151/><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </li>
         <li><a href=https://github.com/Samrthi><i class="fa fa-github" aria-hidden="true"></i></a></li>
       </ul>
     </div>
-    <!--links-->
-
   </div>
-  <!--Header-->
+
+  <!--MAIN-->
 
   <main>
     <div id="aboutpage" class="grid-container">
-      <article id="about" class="grid-50 tablet-grid-50 mobile-grid-100">
+
+      <!--LEFT SIDE-->
+
+      <article id="left" class="grid-50 tablet-grid-50 mobile-grid-100">
+
+        <!--PORTRAIT AND ABOUT TEXT-->
+
         <img id="profile-pic" src="pictures/IMG_2188.JPG" alt="Portrait of Sandra Thiesen">
         <h1>Hi there!</h1>
-        <p>I am a first year Digital Media student in Aberdeen with a passion for Star Trek, playing ukulele and photography. I grew up in Langgoens, a small town in the middle of Germany and decided in high school it was time for a change, so I
-          moved to Scotland. I enjoy doing graphic design projects and developed a passion for programming. In my free time I dance, do trampolining and embroidery.</p>
+        <p>I am a first year Digital Media student in Aberdeen with a passion for Star Trek, playing ukulele and photography. I grew up in Langgoens, a small town in the middle of Germany and decided in high school it was time for a change, so I moved to
+          Scotland. I enjoy doing graphic design projects and developed a passion for programming. In my free time I dance, do trampolining and embroidery.</p>
+
+        <!--SKILL BARS-->
 
         <div class="skills">
-
           <h1>Skills:</h1>
           <div class="progress">
             <div class="progress-bar gray-background" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
@@ -98,9 +117,15 @@
             </div>
           </div>
         </div>
+
       </article>
 
-      <article id="timeline" class="grid-50 tablet-grid-50 mobile-grid-100">
+      <!--RIGHT SIDE-->
+
+      <article id="right" class="grid-50 tablet-grid-50 mobile-grid-100">
+
+        <!--EDUCATION AND EXPERIENCE-->
+
         <h1>Education:</h1>
         <p>BSc(Hons) Digital Media, Robert Gordon University Aberdeen <small class="text-muted">| 2017 - present</small></p>
         <p>Abitur, Herderschule Giessen <small class="text-muted">| 2004 - 2016</small></p>
@@ -111,29 +136,41 @@
         <p>Deutsche Post Employee <small class="text-muted">| 2016 - 2017</small></p>
         <p>Volunteering as student paramedic <small class="text-muted">| 2010 - 2015</small></p>
 
-        <!--Google Maps iFrame-->
+        <!--GOOGLE MAPS IFRAME-->
+
         <div id="maps">
           <h1>Where I study:</h1>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2218076.693213384!2d-4.382232821811869!3d57.11841608094051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d2f0941%3A0x5d8969688e77366a!2sRobert+Gordon+University!5e0!3m2!1sen!2suk!4v1512460327401"
             width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+
       </article>
+
     </div>
   </main>
-  <div id="invisible-footer">
-  </div>
-  <footer>
-    <h1>Access keys</h1>
-    <p><strong>H</strong>ome
-      <strong>A</strong>bout me
-      <strong>P</strong>ortfolio
-      <strong>C</strong>ontacts
-    </p>
+
+    <!--FOOTER-->
+
+    <!--For reference: footer covers content on some pages but you can't scroll to see them since the footer is fixed so I added an invisible div the size of the footer at the bottom-->
+
+    <div id="invisible-footer">
+    </div>
+    <footer>
+      <h1>Access keys:</h1>
+      <p><strong>H</strong>ome
+        <strong>A</strong>bout me
+        <strong>P</strong>ortfolio
+        <strong>C</strong>ontacts
+      </p>
+    </footer>
+
+    <!--JAVASCRIPT-->
+
     <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </footer>
+  </body>
 
-</body>
+  </html>
 
-</html>
+  <!---->

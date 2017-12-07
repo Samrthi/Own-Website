@@ -1,16 +1,20 @@
-
-
-
-
-<!--RELOAD THE PAGE WHEN YOU RESIZE-->
-
-
-
-
 <!DOCTYPE html>
+<!--
+
+
+
+
+RELOAD THE PAGE WHEN YOU RESIZE
+(The initial width of the window when the javascript laods decides how far the jumping ball will go to the right)
+
+
+
+
+-->
 <html lang="en">
 
 <head>
+  <title>Sandra Thiesen</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="
       width=device-width,
@@ -18,76 +22,87 @@
       minimum-scale=1,
       maximum-scale=1
     " />
-  <title>Sandra Thiesen</title>
-  <link rel="stylesheet" href="CSS/main.css">
-  <link rel="stylesheet" href="CSS/home.css">
+
+  <!--EXTERNAL CSS-->
+
   <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!--
-        WHAT IS THE PATH AND WHY DOES IT WORK WITHOUT IT???
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        Find out cdn!
- -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--For reference: font awesome also worked without the cdn-->
+
+  <!--MY CSS-->
+
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/home.css">
 
 </head>
 
 <body>
+
+  <!--HEADER-->
+
   <div id="header" class="grid-container">
-    <!-- Header Information Goes in here -->
+
+    <!--NAVIGATION-->
 
     <div id="nav" class="grid-25 tablet-grid-25 mobile-grid-60">
-      <!-- Navigation Goes in here -->
       <ul>
         <li class="active"><a href="index.html" accesskey="h"><i class="fa fa-home" aria-hidden="true" aria-label="Home" title="home"></i></a></li>
         <li><a href="cv.html" accesskey="a"><i class="fa fa-user" aria-hidden="true" aria-label="About me" title="About me"></i></a></li>
         <li><a href="portfolio.html" accesskey="p"><i class="fa fa-code" aria-hidden="true" aria-label="Portfolio" title="Portfolio"></i></a></li>
         <li><a href="contact.html" accesskey="c"><i class="fa fa-envelope" aria-hidden="true" aria-label="Contact" title="Contact"></i></a></li>
-        <!-- "aria-label" doesn't appear on firefow screenreader extension (claws?) -->
+        <!-- For reference: "aria-label" doesn't appear on firefow screenreader extension -->
       </ul>
     </div>
-    <!--nav-->
+
+    <!--LOGO-->
 
     <div id="logo" class="grid-50 tablet-grid-50 hide-on-mobile">
       <!--Logo goes in here-->
       <img id="logopic" src="pictures/logo.png" alt="logo with initials S.T.">
     </div>
-    <!--logo-->
+
+    <!--SOCIAL MEDIA LINKS-->
 
     <div id="links" class="grid-25 tablet-grid-25 mobile-grid-40">
-      <!-- Links to social media go in here -->
       <ul>
         <li><a href=https://www.linkedin.com/in/sandra-thiesen-b58854151/><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </li>
         <li><a href=https://github.com/Samrthi><i class="fa fa-github" aria-hidden="true"></i></a></li>
       </ul>
     </div>
-    <!--links-->
-
   </div>
-  <!--Header-->
+
+  <!--MAIN-->
 
   <div id="main" class="grid-container">
-    <!-- Main Information Goes in here -->
+
+    <!--ABOUT ME TEXT-->
+
     <article id="info" class="grid-50 tablet-grid-50 mobile-grid-100">
       <h1>Sandra Thiesen</h1>
       <h2>DIGITAL MEDIA STUDENT</h2>
       <p> Hi! I am a student on my way to becoming a software developer currently learning front end web development and graphic design.</p>
-      <!--
-      <span class="hide-on-desktop hide-on-mobile">TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET</span>
-      <span class="hide-on-tablet hide-on-mobile">DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP</span>
-      <span class="hide-on-desktop hide-on-tablet">MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE</span>
-    -->
+
+      <!--CODE TO EASILY SEE WHAT SCREEN SIZE IS CATEGORISED AS WHAT DEVICE IN UNSEMANTIC-->
+      <!-- <span class="hide-on-desktop hide-on-mobile">TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET</span> <span class="hide-on-tablet hide-on-mobile">DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP</span> <span class="hide-on-desktop hide-on-tablet">MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE</span> -->
+
     </article>
+
+    <!--BOUNCING BALL ANIMATION-->
+
     <article id="bounce" title="Bouncing ball" class="grid-50 tablet-grid-50 mobile-grid-100">
       <canvas id="mycanvas" width="500" height="500"></canvas>
     </article>
   </div>
-  <!--main-->
-  <!--footer covers content on some pages but you can't scroll to see them since the footer is fixed so I'll try just adding an invisible div the size of the footer at the botton which I hope will make sure you can always scroll down enough so see everything-->
+
+  <!--FOOTER-->
+
+  <!--For reference: footer covers content on some pages but you can't scroll to see them since the footer is fixed so I added an invisible div the size of the footer at the bottom-->
+
   <div id="invisible-footer">
   </div>
   <footer>
-    <!-- Footer Information Goes in here -->
     <h1>Access keys:</h1>
     <p><strong>H</strong>ome
       <strong>A</strong>bout me
@@ -95,7 +110,9 @@
       <strong>C</strong>ontacts
     </p>
   </footer>
-  <!--footer-->
+
+  <!--JAVASCRIPT-->
+
   <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -106,10 +123,3 @@
 </html>
 
 <!---->
-
-<!--IDEA SECTION
-
-If you were impressed by this demonstration of my Javascript skills, head over the portfolio section to see more of what I can do.
-You just saw my incredible Javascript skills. If you are impressed go to the portfolio to see even more awesome things I can do.
-
--->
