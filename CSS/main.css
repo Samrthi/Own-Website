@@ -36,7 +36,7 @@ body {
 /*I don't have enough content to fill a huge page so I limited the width of the body*/
 @media (min-width: 1300px) {
   body {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
   }
 }
