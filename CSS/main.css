@@ -16,8 +16,6 @@
 /*I used Amatic for my name on my home page but on some screen sizes it kinda ... bugged? and weird spikes started coming from the letters*/
 
 
-
-
 html {
   height: 100%;
   margin-left: 0;
@@ -28,18 +26,22 @@ html {
 body {
   background: linear-gradient(to bottom right, lavender, lightsteelblue);
   font-family: Verdana, sans-serif;
+/*
   margin-left: 0;
   padding-left: 0;
+*/
 }
 
 
 /*I don't have enough content to fill a huge page so I limited the width of the body*/
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   body {
     width: 1200px;
     margin: 0 auto;
   }
 }
+
+/*HEADER*/
 
 #header {
   margin: 0;
