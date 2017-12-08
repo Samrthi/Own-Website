@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sandra Thiesen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="
+      width=device-width,
+      initial-scale=1,
+      minimum-scale=1,
+      maximum-scale=1
+    " />
+
+  <!--EXTERNAL CSS-->
+
+  <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--For reference: font awesome also worked without the cdn-->
+
+  <!--MY CSS-->
+
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/portfolio.css">
+
+</head>
+
+<body>
+
+      <!--HEADER-->
+
+      <div id="header" class="grid-container">
+
+        <!--NAVIGATION-->
+
+        <div id="nav" class="grid-25 tablet-grid-25 mobile-grid-60">
+          <ul>
+            <li><a href="index.html" accesskey="h"><i class="fa fa-home" aria-hidden="true" aria-label="Home" title="home"></i></a></li>
+            <li><a href="cv.html" accesskey="a"><i class="fa fa-user" aria-hidden="true" aria-label="About me" title="About me"></i></a></li>
+            <li class="active"><a href="portfolio.html" accesskey="p"><i class="fa fa-code" aria-hidden="true" aria-label="Portfolio" title="Portfolio"></i></a></li>
+            <li><a href="contact.html" accesskey="c"><i class="fa fa-envelope" aria-hidden="true" aria-label="Contact" title="Contact"></i></a></li>
+            <!-- For reference: "aria-label" doesn't appear on firefow screenreader extension -->
+          </ul>
+        </div>
+
+        <!--LOGO-->
+
+        <div id="logo" class="grid-50 tablet-grid-50 hide-on-mobile">
+          <!--Logo goes in here-->
+          <img id="logopic" src="pictures/logo.png" alt="logo with initials S.T.">
+        </div>
+
+        <!--SOCIAL MEDIA LINKS-->
+
+        <div id="links" class="grid-25 tablet-grid-25 mobile-grid-40">
+          <ul>
+            <li><a href=https://www.linkedin.com/in/sandra-thiesen-b58854151/><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li><a href=https://github.com/Samrthi><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+  <main>
+    <div class="row gallery">
+      <h1>Iceland May 2017</h1>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland1.png" class="thumbnail">
+          <img src="pictures/iceland1.png" alt="Glacier covered in snow">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland2.png" class="thumbnail">
+          <img src="pictures/iceland2.png" alt="Two people standing on an orange hill">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland3.png" class="thumbnail">
+          <img src="pictures/iceland3.png" alt="Ship's deck with railing">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland4.png" class="thumbnail">
+          <img src="pictures/iceland4.png" alt="Woman in red coat standing in midst fog">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland5.png" class="thumbnail">
+          <img src="pictures/iceland5.png" alt="Mountain covered in snow">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland6.png" class="thumbnail">
+          <img src="pictures/iceland6.png" alt="Orange and blue soil">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland7.png" class="thumbnail">
+          <img src="pictures/iceland7.png" alt="Man taking a photographs of a glacier">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland8.png" class="thumbnail">
+          <img src="pictures/iceland8.png" alt="Waterfall">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland9.png" class="thumbnail">
+          <img src="pictures/iceland9.png" alt="Ocean from above">
+        </a>
+      </div>
+      <div class="col-12 col-xs-4 col-md-3">
+        <a target="_blank" href="pictures/iceland10.png" class="thumbnail">
+          <img src="pictures/iceland10.png" alt="Small boat on water in front glacier">
+        </a>
+    </div>
+    </div>
+  </main>
+
+      <!--FOOTER-->
+
+      <!--For reference: footer covers content on some pages but you can't scroll to see them since the footer is fixed so I added an invisible div the size of the footer at the bottom-->
+
+      <div id="invisible-footer">
+      </div>
+      <footer>
+        <h1>Access keys:</h1>
+        <p><strong>H</strong>ome
+          <strong>A</strong>bout me
+          <strong>P</strong>ortfolio
+          <strong>C</strong>ontacts
+        </p>
+      </footer>
+
+      <!--JAVASCRIPT-->
+
+      <script src="https://use.fontawesome.com/d4f3ff8980.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+
+    </html>
+
+    <!---->
